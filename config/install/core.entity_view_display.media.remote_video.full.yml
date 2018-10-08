@@ -1,0 +1,175 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.remote_video.field_media_author_name
+    - field.field.media.remote_video.field_media_cache_age
+    - field.field.media.remote_video.field_media_default_name
+    - field.field.media.remote_video.field_media_description
+    - field.field.media.remote_video.field_media_height
+    - field.field.media.remote_video.field_media_html
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_media_provider_name
+    - field.field.media.remote_video.field_media_provider_url
+    - field.field.media.remote_video.field_media_resource_title
+    - field.field.media.remote_video.field_media_resource_type
+    - field.field.media.remote_video.field_media_thumbnail_height
+    - field.field.media.remote_video.field_media_thumbnail_uri
+    - field.field.media.remote_video.field_media_thumbnail_width
+    - field.field.media.remote_video.field_media_transcript
+    - field.field.media.remote_video.field_media_width
+    - media.type.remote_video
+  module:
+    - link
+    - media
+    - text
+id: media.remote_video.full
+targetEntityType: media
+bundle: remote_video
+mode: full
+content:
+  field_media_author_name:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_cache_age:
+    weight: 10
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_media_default_name:
+    weight: 11
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_height:
+    weight: 4
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_media_html:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_media_oembed_video:
+    type: oembed
+    weight: 0
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    region: content
+  field_media_provider_name:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_provider_url:
+    weight: 9
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_resource_title:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_resource_type:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_thumbnail_height:
+    weight: 14
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_media_thumbnail_uri:
+    weight: 12
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_thumbnail_width:
+    weight: 13
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_media_transcript:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_width:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

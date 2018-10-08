@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_thumbnail_uri
+    - media.type.remote_video
+  module:
+    - link
+id: media.remote_video.field_media_thumbnail_uri
+field_name: field_media_thumbnail_uri
+entity_type: media
+bundle: remote_video
+label: 'Thumbnail URI'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

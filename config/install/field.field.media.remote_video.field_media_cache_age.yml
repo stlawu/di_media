@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_cache_age
+    - media.type.remote_video
+id: media.remote_video.field_media_cache_age
+field_name: field_media_cache_age
+entity_type: media
+bundle: remote_video
+label: 'Cache age'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

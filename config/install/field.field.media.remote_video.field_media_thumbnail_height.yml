@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_thumbnail_height
+    - media.type.remote_video
+id: media.remote_video.field_media_thumbnail_height
+field_name: field_media_thumbnail_height
+entity_type: media
+bundle: remote_video
+label: 'Thumbnail height'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

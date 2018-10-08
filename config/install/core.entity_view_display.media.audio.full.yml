@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_description
+    - field.field.media.audio.field_media_file_size
+    - field.field.media.audio.field_media_mime_type
+    - field.field.media.audio.field_media_transcript
+    - media.type.audio
+  module:
+    - file
+    - text
+id: media.audio.full
+targetEntityType: media
+bundle: audio
+mode: full
+content:
+  field_media_audio_file:
+    type: file_audio
+    weight: 0
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+  field_media_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_file_size:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_media_mime_type:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media_transcript:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

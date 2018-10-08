@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains di_media.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function di_media_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the di_media module.
+    case 'help.page.di_media':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Awesome media handing for Digital Initiatives projects. So LIT, you shouldn’t touch with bare hands.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
