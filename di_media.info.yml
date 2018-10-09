@@ -6,4 +6,5 @@ package: 'Digital Initiatives'
 dependencies:
   - ckeditor
   - media
+  - media_library
   - image
