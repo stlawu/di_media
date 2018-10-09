@@ -18,14 +18,14 @@ bundle: video
 mode: full
 content:
   field_media_description:
-    weight: 3
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_media_file_size:
-    weight: 2
+    weight: 4
     label: inline
     settings:
       thousand_separator: ''
@@ -34,7 +34,7 @@ content:
     type: number_integer
     region: content
   field_media_mime_type:
-    weight: 1
+    weight: 3
     label: inline
     settings:
       link_to_entity: false
@@ -42,7 +42,7 @@ content:
     type: string
     region: content
   field_media_transcript:
-    weight: 4
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }

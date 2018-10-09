@@ -17,7 +17,7 @@ bundle: file
 mode: full
 content:
   field_media_description:
-    weight: 4
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -32,7 +32,7 @@ content:
     weight: 1
     region: content
   field_media_file_size:
-    weight: 3
+    weight: 4
     label: inline
     settings:
       thousand_separator: ''
@@ -41,7 +41,7 @@ content:
     type: number_integer
     region: content
   field_media_mime_type:
-    weight: 2
+    weight: 3
     label: inline
     settings:
       link_to_entity: false
