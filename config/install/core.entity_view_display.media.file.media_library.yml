@@ -3,7 +3,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_file_size
+    - field.field.media.file.field_media_mime_type
     - image.style.thumbnail
     - media.type.file
   module:
@@ -24,6 +27,9 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_description: true
   field_media_file: true
+  field_media_file_size: true
+  field_media_mime_type: true
   name: true
   uid: true

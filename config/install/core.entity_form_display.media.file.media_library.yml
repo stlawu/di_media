@@ -3,7 +3,10 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
+    - field.field.media.file.field_media_file_size
+    - field.field.media.file.field_media_mime_type
     - media.type.file
 id: media.file.media_library
 targetEntityType: media
@@ -20,7 +23,10 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_description: true
   field_media_file: true
+  field_media_file_size: true
+  field_media_mime_type: true
   path: true
   status: true
   uid: true
