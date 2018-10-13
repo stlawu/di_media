@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.media.remote_video.field_media_author_name
+    - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
     - field.field.media.remote_video.field_media_default_name
     - field.field.media.remote_video.field_media_description
@@ -34,6 +35,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_media_byline_freeform:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_media_description:
     weight: 1
     settings:

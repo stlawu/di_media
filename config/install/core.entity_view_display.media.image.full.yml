@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.full
+    - field.field.media.image.field_media_byline_freeform
     - field.field.media.image.field_media_description
     - field.field.media.image.field_media_file_size
     - field.field.media.image.field_media_height
@@ -18,6 +19,13 @@ targetEntityType: media
 bundle: image
 mode: full
 content:
+  field_media_byline_freeform:
+    type: text_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_media_description:
     weight: 2
     label: above
@@ -26,7 +34,7 @@ content:
     type: text_default
     region: content
   field_media_file_size:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       thousand_separator: ''
@@ -35,7 +43,7 @@ content:
     type: number_integer
     region: content
   field_media_height:
-    weight: 6
+    weight: 7
     label: inline
     settings:
       thousand_separator: ''
@@ -53,7 +61,7 @@ content:
     weight: 1
     region: content
   field_media_mime_type:
-    weight: 3
+    weight: 4
     label: inline
     settings:
       link_to_entity: false
@@ -61,7 +69,7 @@ content:
     type: string
     region: content
   field_media_width:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       thousand_separator: ''
@@ -70,6 +78,7 @@ content:
     type: number_integer
     region: content
 hidden:
+  addtoany: true
   created: true
   name: true
   thumbnail: true

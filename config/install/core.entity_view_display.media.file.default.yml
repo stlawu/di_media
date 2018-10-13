@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.file.field_media_byline_freeform
     - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_file_size
@@ -9,11 +10,19 @@ dependencies:
     - media.type.file
   module:
     - file
+    - text
 id: media.file.default
 targetEntityType: media
 bundle: file
 mode: default
 content:
+  field_media_byline_freeform:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_media_file:
     label: visually_hidden
     settings:
@@ -23,6 +32,7 @@ content:
     weight: 1
     region: content
 hidden:
+  addtoany: true
   created: true
   field_media_description: true
   field_media_file_size: true

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: scale_crop_480x480
+label: 'Scale crop 480x480'
+effects:
+  cf7510d3-e146-41e0-8e3a-040dec341c42:
+    uuid: cf7510d3-e146-41e0-8e3a-040dec341c42
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      anchor: center-center

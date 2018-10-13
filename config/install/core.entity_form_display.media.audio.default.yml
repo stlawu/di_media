@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_byline_freeform
     - field.field.media.audio.field_media_description
     - field.field.media.audio.field_media_file_size
     - field.field.media.audio.field_media_mime_type
@@ -29,6 +30,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_media_byline_freeform:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_media_description:
     weight: 1

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.media.media_library
+    - core.entity_view_mode.media.card
     - field.field.media.image.field_media_byline_freeform
     - field.field.media.image.field_media_description
     - field.field.media.image.field_media_file_size
@@ -10,47 +10,33 @@ dependencies:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_mime_type
     - field.field.media.image.field_media_width
-    - image.style.thumbnail
+    - image.style.scale_crop_160x160
     - media.type.image
   module:
     - image
-    - text
-id: media.image.media_library
+id: media.image.card
 targetEntityType: media
 bundle: image
-mode: media_library
+mode: card
 content:
-  field_media_byline_freeform:
-    type: text_textarea
-    weight: 2
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_media_image:
-    type: image_image
+    label: visually_hidden
+    settings:
+      image_style: scale_crop_160x160
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     weight: 1
     region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  name:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
+  field_media_byline_freeform: true
   field_media_description: true
   field_media_file_size: true
   field_media_height: true
   field_media_mime_type: true
   field_media_width: true
-  path: true
-  status: true
+  name: true
+  thumbnail: true
   uid: true

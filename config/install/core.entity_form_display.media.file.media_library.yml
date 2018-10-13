@@ -3,16 +3,35 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.file.field_media_byline_freeform
     - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_file_size
     - field.field.media.file.field_media_mime_type
     - media.type.file
+  module:
+    - file
+    - text
 id: media.file.media_library
 targetEntityType: media
 bundle: file
 mode: media_library
 content:
+  field_media_byline_freeform:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -24,7 +43,6 @@ content:
 hidden:
   created: true
   field_media_description: true
-  field_media_file: true
   field_media_file_size: true
   field_media_mime_type: true
   path: true

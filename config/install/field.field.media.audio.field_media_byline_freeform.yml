@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_byline_freeform
+    - media.type.audio
+  module:
+    - text
+id: media.audio.field_media_byline_freeform
+field_name: field_media_byline_freeform
+entity_type: media
+bundle: audio
+label: 'Byline (freeform)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

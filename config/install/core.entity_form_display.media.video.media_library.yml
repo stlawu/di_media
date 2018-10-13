@@ -3,17 +3,36 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_media_byline_freeform
     - field.field.media.video.field_media_description
     - field.field.media.video.field_media_file_size
     - field.field.media.video.field_media_mime_type
     - field.field.media.video.field_media_transcript
     - field.field.media.video.field_media_video_file
     - media.type.video
+  module:
+    - file
+    - text
 id: media.video.media_library
 targetEntityType: media
 bundle: video
 mode: media_library
 content:
+  field_media_byline_freeform:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_video_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -28,7 +47,6 @@ hidden:
   field_media_file_size: true
   field_media_mime_type: true
   field_media_transcript: true
-  field_media_video_file: true
   path: true
   status: true
   uid: true

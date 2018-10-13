@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.file.field_media_byline_freeform
     - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_file_size
@@ -22,6 +23,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_media_byline_freeform:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_media_description:
     weight: 1
     settings:

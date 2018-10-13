@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: scale_crop_220x220
+label: 'Scale crop 220x220'
+effects:
+  6112e534-765d-4ada-a0c0-00a4c2496967:
+    uuid: 6112e534-765d-4ada-a0c0-00a4c2496967
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

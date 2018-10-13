@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: scale_crop_160x160
+label: 'Scale crop 160x160'
+effects:
+  930c62cd-aceb-4267-a501-97f562cf241d:
+    uuid: 930c62cd-aceb-4267-a501-97f562cf241d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 160
+      anchor: center-center
