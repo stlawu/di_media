@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Generic 2:1'
+id: generic_2_1
+description: '2:1 picture crop.'
+aspect_ratio: '2:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

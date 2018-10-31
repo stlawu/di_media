@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_16_9
+  module:
+    - crop
+    - image_effects
+name: scale_crop_1920x1080
+label: 'Scale crop 1920x1080 (16:9)'
+effects:
+  7737f3eb-b86d-4845-8fd4-fb13ac4e2531:
+    uuid: 7737f3eb-b86d-4845-8fd4-fb13ac4e2531
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  0e7cd2ce-bf5b-4220-a456-a855c4a1e28c:
+    uuid: 0e7cd2ce-bf5b-4220-a456-a855c4a1e28c
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_16_9
+  42725316-4fd3-47e1-b42c-114a390d418b:
+    uuid: 42725316-4fd3-47e1-b42c-114a390d418b
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center

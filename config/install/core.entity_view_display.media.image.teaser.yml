@@ -10,7 +10,7 @@ dependencies:
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_mime_type
     - field.field.media.image.field_media_width
-    - image.style.scale_crop_480x480
+    - image.style.scale_crop_720x720
     - media.type.image
   module:
     - image
@@ -22,7 +22,7 @@ content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: scale_crop_480x480
+      image_style: scale_crop_720x720
       image_link: ''
     third_party_settings: {  }
     type: image

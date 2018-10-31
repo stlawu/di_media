@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_3_2
+  module:
+    - crop
+    - image_effects
+name: scale_crop_480x320
+label: 'Scale crop 480x320 (3:2)'
+effects:
+  946e0bcc-509a-4d67-9d52-eb1d027ed9cc:
+    uuid: 946e0bcc-509a-4d67-9d52-eb1d027ed9cc
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  4282e67b-70f0-49e1-b57c-57fdbe6ba647:
+    uuid: 4282e67b-70f0-49e1-b57c-57fdbe6ba647
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_3_2
+  8a054ce0-9c1c-4157-be57-b28e6de0d8e5:
+    uuid: 8a054ce0-9c1c-4157-be57-b28e6de0d8e5
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 480
+      height: 320
+      anchor: center-center

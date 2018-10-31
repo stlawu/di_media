@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_1_1
+  module:
+    - crop
+    - image_effects
+name: scale_crop_720x720
+label: 'Scale crop 720x720 (1:1)'
+effects:
+  c48704d3-dd09-43b0-a564-e00c7c9eeb20:
+    uuid: c48704d3-dd09-43b0-a564-e00c7c9eeb20
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  c4e1a147-6cf7-44ef-9788-dd2eb0477bd6:
+    uuid: c4e1a147-6cf7-44ef-9788-dd2eb0477bd6
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_1_1
+  0d8e3f58-bf6b-4642-8331-62424ce6b821:
+    uuid: 0d8e3f58-bf6b-4642-8331-62424ce6b821
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 720
+      height: 720
+      anchor: center-center

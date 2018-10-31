@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freeform
+  module:
+    - crop
+    - image_effects
+name: larger
+label: 'Larger (720x720)'
+effects:
+  2f7eada8-701c-4ed4-b521-937ec4806626:
+    uuid: 2f7eada8-701c-4ed4-b521-937ec4806626
+    id: image_scale
+    weight: -8
+    data:
+      width: 720
+      height: 720
+      upscale: false
+  bfe1c348-4edd-412f-bf97-a3bae143f56f:
+    uuid: bfe1c348-4edd-412f-bf97-a3bae143f56f
+    id: image_effects_auto_orient
+    weight: -10
+    data:
+      scan_exif: true
+  ef7c4a0d-e77d-4171-bce4-94cc97d00b3f:
+    uuid: ef7c4a0d-e77d-4171-bce4-94cc97d00b3f
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: freeform

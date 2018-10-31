@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_2_1
+  module:
+    - crop
+    - image_effects
+name: scale_crop_220x110
+label: 'Scale crop 220x110 (2:1)'
+effects:
+  fa4e8dd9-816c-418d-bb7d-c9fec63b3990:
+    uuid: fa4e8dd9-816c-418d-bb7d-c9fec63b3990
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  ee478d57-82cc-4805-ae5a-14c5911d716f:
+    uuid: ee478d57-82cc-4805-ae5a-14c5911d716f
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_2_1
+  2d95cb02-2769-4bae-86e3-193d632115e9:
+    uuid: 2d95cb02-2769-4bae-86e3-193d632115e9
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 220
+      height: 110
+      anchor: center-center

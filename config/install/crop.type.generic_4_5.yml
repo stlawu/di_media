@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Generic 4:5'
+id: generic_4_5
+description: '4:5 picture crop.'
+aspect_ratio: '4:5'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
