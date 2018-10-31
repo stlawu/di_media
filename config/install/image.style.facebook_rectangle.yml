@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.social_media_40_21
+  module:
+    - crop
+    - image_effects
+name: facebook_rectangle
+label: 'facebook rectangle'
+effects:
+  7a7bd2b3-5b7f-4f0f-b1fb-6688f7a3e78b:
+    uuid: 7a7bd2b3-5b7f-4f0f-b1fb-6688f7a3e78b
+    id: image_effects_auto_orient
+    weight: -10
+    data:
+      scan_exif: true
+  63e4bef9-0990-4ce7-89c8-9a867c2a15a4:
+    uuid: 63e4bef9-0990-4ce7-89c8-9a867c2a15a4
+    id: image_scale_and_crop
+    weight: -8
+    data:
+      width: 1200
+      height: 630
+      anchor: center-center
+  0423b2f0-3dac-4e45-b435-a84e62ad2ba9:
+    uuid: 0423b2f0-3dac-4e45-b435-a84e62ad2ba9
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: social_media_40_21

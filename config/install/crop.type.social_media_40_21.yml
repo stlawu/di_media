@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Social media 40:21'
+id: social_media_40_21
+description: '40:21 picture crop for Facebook sharing.'
+aspect_ratio: '40:21'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Social media 28:15'
+id: social_media_28_15
+description: '28:15 picture crop for Twitter sharing.'
+aspect_ratio: '28:15'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

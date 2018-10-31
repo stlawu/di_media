@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_1_1
+  module:
+    - crop
+    - image_effects
+name: facebook_square
+label: facebook_square
+effects:
+  3bf30bda-0412-4363-9556-549e14979ee6:
+    uuid: 3bf30bda-0412-4363-9556-549e14979ee6
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  00dd72e7-176e-4b3e-b86b-5deacda8225a:
+    uuid: 00dd72e7-176e-4b3e-b86b-5deacda8225a
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_1_1
+  3ded4fa4-36bd-4f4b-a3b5-76ba86fb0525:
+    uuid: 3ded4fa4-36bd-4f4b-a3b5-76ba86fb0525
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 720
+      height: 720
+      anchor: center-center
