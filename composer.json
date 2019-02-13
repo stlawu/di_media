@@ -1,10 +1,10 @@
 {
   "name": "stlawu/di_media",
-  "type": "drupal-module",
+  "type": "drupal-custom-module",
   "description": "Awesome media handing for Digital Initiatives projects. So LIT, you shouldn’t touch with bare hands.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "",
+  "homepage": "https://github.com/stlawu/di_media",
   "minimum-stability": "dev",
   "support": {
     "issues": "",
