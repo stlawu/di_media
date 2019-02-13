@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.basic
+    - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_byline_freeform
+    - field.field.media.audio.field_media_description
+    - field.field.media.audio.field_media_file_size
+    - field.field.media.audio.field_media_mime_type
+    - field.field.media.audio.field_media_transcript
+    - media.type.audio
+  module:
+    - file
+id: media.audio.basic
+targetEntityType: media
+bundle: audio
+mode: basic
+content:
+  field_media_audio_file:
+    type: file_audio
+    weight: 0
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_media_byline_freeform: true
+  field_media_description: true
+  field_media_file_size: true
+  field_media_mime_type: true
+  field_media_transcript: true
+  name: true
+  thumbnail: true
+  uid: true

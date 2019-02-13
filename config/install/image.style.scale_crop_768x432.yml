@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_16_9
+  module:
+    - crop
+    - image_effects
+name: scale_crop_768x432
+label: 'Scale crop 768x432 (16:9)'
+effects:
+  63350ca4-8d0f-4455-8453-10c20723262b:
+    uuid: 63350ca4-8d0f-4455-8453-10c20723262b
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  273d8876-e4d1-4ca2-9b62-d233f455211f:
+    uuid: 273d8876-e4d1-4ca2-9b62-d233f455211f
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_16_9
+  b3226a26-eefb-4aec-947d-94861259c1d3:
+    uuid: b3226a26-eefb-4aec-947d-94861259c1d3
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 768
+      height: 432
+      anchor: center-center
