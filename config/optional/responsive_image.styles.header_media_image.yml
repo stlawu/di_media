@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_crop_1200x675
+    - image.style.scale_crop_1280x720
+    - image.style.scale_crop_1920x1080
+    - image.style.scale_crop_480x270
+    - image.style.scale_crop_768x432
+    - image.style.scale_crop_992x558
+    - image.style.thumbnail
+id: header_media_image
+label: 'Header Media Image Full-width'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - scale_crop_1200x675
+        - scale_crop_1280x720
+        - scale_crop_1920x1080
+        - scale_crop_480x270
+        - scale_crop_768x432
+        - scale_crop_992x558
+breakpoint_group: responsive_image
+fallback_image_style: thumbnail

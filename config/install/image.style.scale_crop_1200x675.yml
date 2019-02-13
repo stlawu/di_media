@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.generic_16_9
+  module:
+    - crop
+    - image_effects
+name: scale_crop_1200x675
+label: 'Scale crop 1200x675 (16:9)'
+effects:
+  a35d987b-bf9b-47f8-8b71-c7779d8ec9df:
+    uuid: a35d987b-bf9b-47f8-8b71-c7779d8ec9df
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  d30ac618-0135-4fc8-90d6-26c3076dc200:
+    uuid: d30ac618-0135-4fc8-90d6-26c3076dc200
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: generic_16_9
+  615033a3-b000-4d5e-9699-60759efc84a0:
+    uuid: 615033a3-b000-4d5e-9699-60759efc84a0
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 1200
+      height: 675
+      anchor: center-center
