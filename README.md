@@ -53,4 +53,4 @@ Also make sure you have specified the `installer-paths` for `drupal-custom-modul
 
 ```
 
-Then, run `composer require 'stlawu/di_media:master'`. This should install the module in your project's `web/modules/custom` directory.
+Then, run `composer require stlawu/di_media:master`. This should install the module in your project's `web/modules/custom` directory.
