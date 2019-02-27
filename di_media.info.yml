@@ -5,6 +5,11 @@ core: 8.x
 package: 'Digital Initiatives'
 dependencies:
   - ckeditor
+  - crop
+  - file
+  - image
+  - link
   - media
   - media_library
-  - image
+  - path
+  - text
