@@ -1,12 +1,14 @@
 # Digital Initiatives: Media
 
-This custom module contains configuration for media types. The goal is for this to allow reusable configuration for media types across multiple projects.
+This custom module contains configuration for media types. The goal is for this
+to allow reusable configuration for media types across multiple projects.
 
 Note: This is still very much a work-in-progress.
 
 ## How to use
 
-In your Drupal project's `composer.json` file, add the following into `repositories` property, which should look similar to the following:
+In your Drupal project's `composer.json` file, add the following into
+`repositories` property, which should look similar to the following:
 
 ```
 "repositories": [
@@ -25,7 +27,8 @@ In your Drupal project's `composer.json` file, add the following into `repositor
 ],
 ```
 
-Also make sure you have specified the `installer-paths` for `drupal-custom-module` packages, such as below: 
+Also make sure you have specified the `installer-paths` for
+`drupal-custom-module` packages, such as below: 
 
 ```
 "extra": {
@@ -53,4 +56,5 @@ Also make sure you have specified the `installer-paths` for `drupal-custom-modul
 
 ```
 
-Then, run `composer require stlawu/di_media`. This should install the module in your project's `web/modules/custom` directory.
+Then, run `composer require stlawu/di_media`. This should install the module in
+your project's `web/modules/custom` directory.
